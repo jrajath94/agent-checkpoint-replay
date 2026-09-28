@@ -1,0 +1,17 @@
+# fixture: integers the demo agent finds, multiplies in pairs, and sums.
+# Lines not starting with "value:" are decoys for the search step.
+note: these are just decoy lines for grep
+value: 12
+value: 7
+value: 5
+note: another decoy line
+value: 9
+value: 23
+value: 4
+value: 11
+value: 6
+note: decoys prove the pattern actually filters
+value: 18
+value: 3
+value: 14
+value: 10
