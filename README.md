@@ -2,7 +2,7 @@
 
 A minimal, honest checkpoint / restore / replay demo for long-running
 tool-calling agent runs. Python 3.10+, standard library only, no network,
-no LLM. About 300 lines of library code, readable in one sitting.
+no LLM. Under 500 lines of library code, readable in one sitting.
 
 ## The problem
 
