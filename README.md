@@ -35,6 +35,15 @@ python3 scripts/demo_replay.py       # replay the trace, assert identical
 python3 scripts/print_trace.py       # the sample trace quoted below
 ```
 
+## Verified results (locally run, self-reported)
+
+- Real kill -9 crash demo: process SIGKILLed mid-run, resumed from the
+  checkpoint, final state byte-identical to an uninterrupted run (20/20
+  tool steps, no tool call re-executed).
+- Deterministic replay: re-executing a finished run from its trace returns
+  recorded tool outputs and asserts an identical action sequence.
+- Tests: 14/14 green (`python3 -m pytest tests/ -q`), standard library only.
+
 ## Layout
 
 - `checkpoint_replay/log.py` - append-only JSONL log, fsync per record, `fsck`
